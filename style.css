@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+  
+.calculator{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: auto repeat(6, 90px);
+}
+
+.calculator > button{
+    font-size: 25px;
+    color: red;
+}
+
+.textBox{
+    text-align: right;
+    height: 75px;
+    font-size: 50px;
+    grid-column: span 4;
+    color: black;
+    background-color: white;
+}
+
+.span{
+    grid-column: span  2;
+}
